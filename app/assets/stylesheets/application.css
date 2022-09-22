@@ -1,0 +1,149 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2rem 10rem;
+  text-align: center;
+}
+
+.user_list {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 2rem 0;
+  list-style: none;
+}
+
+.user_prof {
+  height: 10rem;
+}
+
+.user_prof img {
+  height: 100%;
+}
+
+.user_data {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user_data h2 {
+  font-size: 1.2rem;
+}
+
+.user_data p {
+  align-self: flex-end;
+  padding-bottom: 1rem;
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+
+/* Css for single user */
+
+.single_user {
+  background-color: silver;
+}
+
+.user_bio h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.user_bio p {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+.post_list {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.post_list h2 {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.post_title {
+  font-size: 1.5rem;
+}
+
+.post_list p {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+.post_summary {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 0;
+}
+
+.post_summary p:first-child {
+  margin-right: 0.5rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  width: 15%;
+  align-self: center;
+}
+
+.commentt_list {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+/* Css for a single post */
+
+.post_header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+}
+
+.post_header .right {
+  display: flex;
+}
+
+.post_header .right p {
+  margin-right: 0.2rem;
+}
+
+.post_content {
+  font-size: 1.3rem;
+  font-weight: lighter;
+  padding: 1rem 0;
+}
+
+.post_comments {
+  list-style: none;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+}

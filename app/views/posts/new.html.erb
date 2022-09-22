@@ -1,0 +1,16 @@
+
+
+<%= form_with model: @post, url: user_posts_path, method: :post do |form| %>
+<h3>Create new Post</h3>
+  <div>
+    <%= form.text_field :title, placeholder: 'Title' %>
+  </div>
+  <div >
+    <%= form.text_area :text, placeholder: 'Content' %>
+  </div>
+
+  <div >
+    <%= form.submit 'Create post' %>
+  </div>
+<% end %>
+
